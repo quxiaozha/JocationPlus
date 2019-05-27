@@ -30,6 +30,8 @@ namespace LocationCleaned
             CreateLocationDB();
             InitializeComponent();
             ReadLocationFromDB();
+            PrintMessage("https://github.com/quxiaozha/JocationPlus");
+            PrintMessage("开源软件，请勿用作非法用途^_^");
         }
         private void frmMain_Load(object sender, EventArgs e)
         {

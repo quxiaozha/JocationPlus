@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.txtLocation = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,6 +94,20 @@
             this.groupBox1.Text = "位置操作";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.Gold;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(206, 64);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(180, 29);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "保存当前坐标";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // btnReset
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -140,7 +154,7 @@
             this.rtbxLog.Location = new System.Drawing.Point(3, 119);
             this.rtbxLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbxLog.Name = "rtbxLog";
-            this.rtbxLog.Size = new System.Drawing.Size(415, 210);
+            this.rtbxLog.Size = new System.Drawing.Size(430, 210);
             this.rtbxLog.TabIndex = 3;
             this.rtbxLog.Text = "";
             this.rtbxLog.TextChanged += new System.EventHandler(this.rtbxLog_TextChanged);
@@ -149,7 +163,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.DodgerBlue;
             this.button3.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button3.Location = new System.Drawing.Point(448, 232);
+            this.button3.Location = new System.Drawing.Point(456, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 40);
             this.button3.TabIndex = 5;
@@ -162,7 +176,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.DodgerBlue;
             this.button4.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button4.Location = new System.Drawing.Point(489, 278);
+            this.button4.Location = new System.Drawing.Point(497, 278);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 40);
             this.button4.TabIndex = 6;
@@ -175,7 +189,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.DodgerBlue;
             this.button5.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button5.Location = new System.Drawing.Point(489, 188);
+            this.button5.Location = new System.Drawing.Point(497, 188);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
             this.button5.TabIndex = 7;
@@ -188,7 +202,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.DodgerBlue;
             this.button6.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button6.Location = new System.Drawing.Point(530, 232);
+            this.button6.Location = new System.Drawing.Point(538, 232);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
             this.button6.TabIndex = 8;
@@ -199,7 +213,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(482, 119);
+            this.textBox1.Location = new System.Drawing.Point(490, 119);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 9;
@@ -209,7 +223,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(425, 125);
+            this.label1.Location = new System.Drawing.Point(433, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 10;
@@ -219,7 +233,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(482, 151);
+            this.checkBox1.Location = new System.Drawing.Point(490, 151);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 11;
@@ -229,26 +243,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(425, 151);
+            this.label3.Location = new System.Drawing.Point(433, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 12;
             this.label3.Text = "匀速：";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button7
-            // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.Gold;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(206, 64);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(180, 29);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "保存当前坐标";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // frmMain
             // 
