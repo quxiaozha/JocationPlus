@@ -37,14 +37,19 @@
             this.txtLocation = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rtbxLog = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,58 +164,6 @@
             this.rtbxLog.Text = "";
             this.rtbxLog.TextChanged += new System.EventHandler(this.rtbxLog_TextChanged);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button3.Location = new System.Drawing.Point(456, 232);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button4.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button4.Location = new System.Drawing.Point(497, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "6";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button5.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button5.Location = new System.Drawing.Point(497, 188);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button6.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button6.Location = new System.Drawing.Point(538, 232);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(40, 40);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "4";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            this.button6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(490, 119);
@@ -250,12 +203,156 @@
             this.label3.Text = "匀速：";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial", 9F);
+            this.button11.Location = new System.Drawing.Point(538, 273);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(40, 40);
+            this.button11.TabIndex = 16;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Arial", 9F);
+            this.button10.Location = new System.Drawing.Point(454, 273);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(40, 40);
+            this.button10.TabIndex = 15;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial", 9F);
+            this.button9.Location = new System.Drawing.Point(454, 189);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(40, 40);
+            this.button9.TabIndex = 14;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(538, 189);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(40, 40);
+            this.button8.TabIndex = 13;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial", 9F);
+            this.button6.Location = new System.Drawing.Point(538, 231);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(40, 40);
+            this.button6.TabIndex = 8;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(496, 189);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(40, 40);
+            this.button5.TabIndex = 7;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial", 9F);
+            this.button4.Location = new System.Drawing.Point(496, 273);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(40, 40);
+            this.button4.TabIndex = 6;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 9F);
+            this.button3.Location = new System.Drawing.Point(454, 231);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 40);
+            this.button3.TabIndex = 5;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            // 
+            // label4
+            // 
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Image = global::Jocation.Properties.Resources.love1;
+            this.label4.Location = new System.Drawing.Point(496, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 40);
+            this.label4.TabIndex = 18;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.DoubleClick += new System.EventHandler(this.label4_DoubleClick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(596, 334);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
@@ -272,7 +369,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "JocationPlus v1.6  虚拟定位修改器 By qxz";
+            this.Text = "JocationPlus v1.7  虚拟定位修改器 By qxz";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.groupBox1.ResumeLayout(false);
@@ -300,6 +397,11 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label4;
     }
 }
 

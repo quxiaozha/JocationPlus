@@ -182,7 +182,7 @@ namespace LocationCleaned
         private void button5_Click(object sender, EventArgs e)
         {
             
-            PrintMessage($"向上移动.");
+            PrintMessage($"向↑移动.");
             do
             {
                 map.Location.Latitude += speed;
@@ -195,7 +195,7 @@ namespace LocationCleaned
         // ←
         private void button3_Click(object sender, EventArgs e)
         {
-            PrintMessage($"向左移动.");
+            PrintMessage($"向←移动.");
             do
             {
                 map.Location.Longitude -= speed;
@@ -208,7 +208,7 @@ namespace LocationCleaned
         //↓
         private void button4_Click(object sender, EventArgs e)
         {
-            PrintMessage($"向下移动.");
+            PrintMessage($"向↓移动.");
             do
             {
                 map.Location.Latitude -= speed;
@@ -221,7 +221,7 @@ namespace LocationCleaned
         //→
         private void button6_Click(object sender, EventArgs e)
         {
-            PrintMessage($"向右移动.");
+            PrintMessage($"向→移动.");
             do
             {
                 map.Location.Longitude += speed;
@@ -246,19 +246,39 @@ namespace LocationCleaned
             switch (e.KeyCode)
             {
                 case Keys.Left:
+                case Keys.NumPad4:
                     button3.PerformClick();
                     e.Handled = true;
                     break;
                 case Keys.Right:
+                case Keys.NumPad6:
                     button6.PerformClick();
                     e.Handled = true;
                     break;
                 case Keys.Up:
+                case Keys.NumPad8:
                     button5.PerformClick();
                     e.Handled = true;
                     break;
                 case Keys.Down:
+                case Keys.NumPad2:
                     button4.PerformClick();
+                    e.Handled = true;
+                    break;
+                case Keys.NumPad7:
+                    button9.PerformClick();
+                    e.Handled = true;
+                    break;
+                case Keys.NumPad9:
+                    button8.PerformClick();
+                    e.Handled = true;
+                    break;
+                case Keys.NumPad1:
+                    button10.PerformClick();
+                    e.Handled = true;
+                    break;
+                case Keys.NumPad3:
+                    button11.PerformClick();
                     e.Handled = true;
                     break;
                 default:
@@ -341,6 +361,66 @@ namespace LocationCleaned
                 ReadLocationFromDB();
                 map.ReadNameFromDB();
             }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            PrintMessage($"向↖移动.");
+            do
+            {
+                map.Location.Latitude += speed * Math.Sqrt(2) / 2;
+                map.Location.Longitude -= speed * Math.Sqrt(2) / 2;
+                service.UpdateLocation(map.Location);
+                Delay(1000);
+            } while (keepMoving);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            PrintMessage($"向↗移动.");
+            do
+            {
+                map.Location.Latitude += speed * Math.Sqrt(2) / 2;
+                map.Location.Longitude += speed * Math.Sqrt(2) / 2;
+                service.UpdateLocation(map.Location);
+                Delay(1000);
+            } while (keepMoving);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            PrintMessage($"向↘移动.");
+            do
+            {
+                map.Location.Latitude -= speed * Math.Sqrt(2) / 2;
+                map.Location.Longitude += speed * Math.Sqrt(2) / 2;
+                service.UpdateLocation(map.Location);
+                Delay(1000);
+            } while (keepMoving);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            PrintMessage($"向↙移动.");
+            do
+            {
+                map.Location.Latitude -= speed * Math.Sqrt(2) / 2;
+                map.Location.Longitude -= speed * Math.Sqrt(2) / 2;
+                service.UpdateLocation(map.Location);
+                Delay(1000);
+            } while (keepMoving);
+        }
+
+        private void label4_DoubleClick(object sender, EventArgs e)
+        {
+            PrintMessage($"❤ ❤ ❤ 恭喜发现隐藏功能 ❤ ❤ ❤");
+            PrintMessage($"https://github.com/quxiaozha/JocationPlus");
+            PrintMessage($"❤ ❤ ❤ 免费开源欢迎比心 ❤ ❤ ❤");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

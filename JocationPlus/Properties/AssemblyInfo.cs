@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("JocationPlus虚拟定位修改器 By Jonney & qxz")]
-[assembly: AssemblyDescription("JocationPlus虚拟定位修改器 By Jonney & qxz")]
+[assembly: AssemblyTitle("JocationPlus虚拟定位修改器 By qxz")]
+[assembly: AssemblyDescription("JocationPlus虚拟定位修改器 By qxz")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("https://github.com/quxiaozha/JocationPlus")]
 [assembly: AssemblyProduct("Jocation虚拟定位修改器 By qxz")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.6.0.0")]
-[assembly: AssemblyFileVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.7.0.0")]
+[assembly: AssemblyFileVersion("1.7.0.0")]
