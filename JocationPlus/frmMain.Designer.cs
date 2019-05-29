@@ -72,7 +72,7 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(395, 64);
+            this.button2.Location = new System.Drawing.Point(393, 64);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 29);
@@ -104,7 +104,7 @@
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.BackColor = System.Drawing.Color.Gold;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(206, 64);
+            this.button7.Location = new System.Drawing.Point(204, 64);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(180, 29);
@@ -118,7 +118,7 @@
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReset.BackColor = System.Drawing.Color.IndianRed;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Location = new System.Drawing.Point(18, 64);
+            this.btnReset.Location = new System.Drawing.Point(16, 64);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(180, 29);
@@ -156,19 +156,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbxLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbxLog.Location = new System.Drawing.Point(3, 119);
+            this.rtbxLog.Location = new System.Drawing.Point(5, 110);
             this.rtbxLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbxLog.Name = "rtbxLog";
-            this.rtbxLog.Size = new System.Drawing.Size(430, 210);
+            this.rtbxLog.Size = new System.Drawing.Size(588, 219);
             this.rtbxLog.TabIndex = 3;
             this.rtbxLog.Text = "";
             this.rtbxLog.TextChanged += new System.EventHandler(this.rtbxLog_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(490, 119);
+            this.textBox1.Location = new System.Drawing.Point(508, 117);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.Size = new System.Drawing.Size(79, 25);
             this.textBox1.TabIndex = 9;
             this.textBox1.Text = "0.0002";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -176,7 +176,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(433, 125);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(451, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 10;
@@ -186,7 +187,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(490, 151);
+            this.checkBox1.Location = new System.Drawing.Point(508, 152);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 11;
@@ -196,7 +197,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(433, 151);
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(451, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 12;
@@ -333,13 +335,13 @@
             // 
             // label4
             // 
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Image = global::Jocation.Properties.Resources.love1;
             this.label4.Location = new System.Drawing.Point(496, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 40);
             this.label4.TabIndex = 18;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             this.label4.DoubleClick += new System.EventHandler(this.label4_DoubleClick);
             // 
             // frmMain

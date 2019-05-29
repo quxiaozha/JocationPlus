@@ -413,14 +413,9 @@ namespace LocationCleaned
 
         private void label4_DoubleClick(object sender, EventArgs e)
         {
-            PrintMessage($"❤ ❤ ❤ 恭喜发现隐藏功能 ❤ ❤ ❤");
+            PrintMessage($"❤ ❤ ❤ 哇哦居然被发现了 ❤ ❤ ❤");
             PrintMessage($"https://github.com/quxiaozha/JocationPlus");
             PrintMessage($"❤ ❤ ❤ 免费开源欢迎比心 ❤ ❤ ❤");
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 
