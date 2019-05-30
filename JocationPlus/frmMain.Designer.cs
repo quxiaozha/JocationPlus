@@ -159,7 +159,7 @@
             this.rtbxLog.Location = new System.Drawing.Point(5, 110);
             this.rtbxLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbxLog.Name = "rtbxLog";
-            this.rtbxLog.Size = new System.Drawing.Size(588, 219);
+            this.rtbxLog.Size = new System.Drawing.Size(447, 219);
             this.rtbxLog.TabIndex = 3;
             this.rtbxLog.Text = "";
             this.rtbxLog.TextChanged += new System.EventHandler(this.rtbxLog_TextChanged);
@@ -176,7 +176,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(451, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
@@ -197,7 +197,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(451, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
@@ -213,7 +213,7 @@
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Arial", 9F);
-            this.button11.Location = new System.Drawing.Point(538, 273);
+            this.button11.Location = new System.Drawing.Point(543, 273);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(40, 40);
             this.button11.TabIndex = 16;
@@ -229,7 +229,7 @@
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Arial", 9F);
-            this.button10.Location = new System.Drawing.Point(454, 273);
+            this.button10.Location = new System.Drawing.Point(459, 273);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(40, 40);
             this.button10.TabIndex = 15;
@@ -245,7 +245,7 @@
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Arial", 9F);
-            this.button9.Location = new System.Drawing.Point(454, 189);
+            this.button9.Location = new System.Drawing.Point(459, 189);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(40, 40);
             this.button9.TabIndex = 14;
@@ -261,7 +261,7 @@
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(538, 189);
+            this.button8.Location = new System.Drawing.Point(543, 189);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 40);
             this.button8.TabIndex = 13;
@@ -277,7 +277,7 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Arial", 9F);
-            this.button6.Location = new System.Drawing.Point(538, 231);
+            this.button6.Location = new System.Drawing.Point(543, 231);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
             this.button6.TabIndex = 8;
@@ -293,7 +293,7 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(496, 189);
+            this.button5.Location = new System.Drawing.Point(501, 189);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
             this.button5.TabIndex = 7;
@@ -309,7 +309,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 9F);
-            this.button4.Location = new System.Drawing.Point(496, 273);
+            this.button4.Location = new System.Drawing.Point(501, 273);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 40);
             this.button4.TabIndex = 6;
@@ -325,7 +325,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 9F);
-            this.button3.Location = new System.Drawing.Point(454, 231);
+            this.button3.Location = new System.Drawing.Point(459, 231);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 40);
             this.button3.TabIndex = 5;
@@ -338,7 +338,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Image = global::Jocation.Properties.Resources.love1;
-            this.label4.Location = new System.Drawing.Point(496, 232);
+            this.label4.Location = new System.Drawing.Point(501, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 40);
             this.label4.TabIndex = 18;

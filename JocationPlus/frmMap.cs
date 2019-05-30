@@ -58,7 +58,7 @@ namespace LocationCleaned
             float: left;
         }
     </style>
-    <script type='text/javascript' src='http://api.map.baidu.com/api?v=3.0&ak=GjHGmPzAPs0hH6KIcpvmoAzt'></script>
+    <script type='text/javascript' src='http://api.map.baidu.com/api?v=3.0&ak=qsgSGFbqwGGzeQZU1ahGqLN3xQaHGrHf'></script>
 </head>
 <body>
     <div id='allmap'>
@@ -76,8 +76,11 @@ namespace LocationCleaned
 <script type='text/javascript'>
     document.oncontextmenu=new Function('event.returnValue=false;'); document.onselectstart=new Function('event.returnValue=false;'); 
     var marker;
+    //alert(window.external.GetLongitude());
+    //alert(window.external.GetLatitude());
     var map = new BMap.Map('allmap');               // 创建Map实例
-    var point = new BMap.Point(114.05979, 22.545453);    // 创建点坐标(经度,纬度)
+    var point = new BMap.Point(114.381692, 30.573998);    // 创建点坐标(经度,纬度)
+    //var point = new BMap.Point(window.external.GetLongitude(), window.external.GetLatitude());    // 创建点坐标(经度,纬度)
     map.centerAndZoom(point, 8);                   // 初始化地图,设置中心点坐标和地图大小级别
     //map.addOverlay(new BMap.Marker(point));         // 给该坐标加一个红点标记
     map.addControl(new BMap.NavigationControl());   // 添加平移缩放控件
@@ -297,6 +300,15 @@ namespace LocationCleaned
             {
                 //locationDB.CloseConnection();
             }
+        }
+        public string GetLatitude()
+        {
+            return Location.Latitude.ToString();
+        }
+
+        public string GetLongitude()
+        {
+            return Location.Longitude.ToString();
         }
 
         public void ReadNameFromDB()
