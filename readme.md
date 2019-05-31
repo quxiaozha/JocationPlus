@@ -2,6 +2,8 @@
 
 #### 修改自[JonneyDong的Jocation](https://github.com/JonneyDong/JocationRelease)，感谢原作者的开源~
 
+### JocationPlus交流群: 710736547
+
 #### 版本记录
 
 - v1.3  增加**速度**和**方向**按钮，支持**键盘上下左右**操作，支持**手工输入**经纬度
