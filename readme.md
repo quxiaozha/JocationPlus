@@ -2,7 +2,7 @@
 
 #### 修改自[JonneyDong的Jocation](https://github.com/JonneyDong/JocationRelease)，感谢原作者的开源~
 
-### JocationPlus交流群: 710736547
+### JocationPlus QQ交流群: 760883874
 
 #### 版本记录
 
