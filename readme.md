@@ -4,7 +4,7 @@
 
 ### 欢迎PR~
 
-### JocationPlus QQ交流群: 760883874 Star再加群更棒哦~
+### JocationPlus QQ交流群: 760883874 先Star再加群更棒哦~
 
 #### 版本记录
 
