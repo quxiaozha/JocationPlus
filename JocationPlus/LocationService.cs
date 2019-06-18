@@ -50,6 +50,12 @@ namespace LocationCleaned
 
                         foreach (string udid in dst)
                         {
+                            var info = new iMobileDevice.Usbmuxd.UsbmuxdDeviceInfo();
+                            LibiMobileDevice.Instance.Usbmuxd.usbmuxd_get_device_by_udid(udid, ref info);
+                            if (info.product_id == 0)
+                            {
+                                continue;
+                            }
                             iDeviceHandle iDeviceHandle;
                             iDevice.idevice_new(out iDeviceHandle, udid).ThrowOnError();
                             LockdownClientHandle lockdownClientHandle;
