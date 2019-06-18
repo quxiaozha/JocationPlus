@@ -168,14 +168,10 @@ namespace LocationCleaned
             service.ClearLocation();
         }
 
-        private void txtLocationTest_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rtbxLog_TextChanged(object sender, EventArgs e)
         {
-
+            rtbxLog.SelectionStart = rtbxLog.Text.Length;
+            rtbxLog.ScrollToCaret();
         }
 
         //↑

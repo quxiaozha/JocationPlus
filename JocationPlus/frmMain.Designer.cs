@@ -117,13 +117,14 @@
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReset.BackColor = System.Drawing.Color.IndianRed;
+            this.btnReset.Enabled = false;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Location = new System.Drawing.Point(16, 64);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(180, 29);
             this.btnReset.TabIndex = 7;
-            this.btnReset.Text = "还原定位";
+            this.btnReset.Text = "还原定位(暂不支持)";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -159,6 +160,7 @@
             this.rtbxLog.Location = new System.Drawing.Point(5, 110);
             this.rtbxLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbxLog.Name = "rtbxLog";
+            this.rtbxLog.ReadOnly = true;
             this.rtbxLog.Size = new System.Drawing.Size(447, 219);
             this.rtbxLog.TabIndex = 3;
             this.rtbxLog.Text = "";
