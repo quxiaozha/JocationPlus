@@ -21,6 +21,7 @@ namespace LocationCleaned
         /// </summary>
         public new Location Location { get; set; } = new Location();
         public SqLiteHelper locationDB { get; set; } = new SqLiteHelper("locationDB.db");
+        public new Location txtLocation { get; set; } = new Location();
         public frmMap()
         {
             //this.locationDB = locationDB;
@@ -76,12 +77,10 @@ namespace LocationCleaned
 <script type='text/javascript'>
     document.oncontextmenu=new Function('event.returnValue=false;'); document.onselectstart=new Function('event.returnValue=false;'); 
     var marker;
-    //alert(window.external.GetLongitude());
-    //alert(window.external.GetLatitude());
     var map = new BMap.Map('allmap');               // 创建Map实例
-    var point = new BMap.Point(114.381692, 30.573998);    // 创建点坐标(经度,纬度)
-    //var point = new BMap.Point(window.external.GetLongitude(), window.external.GetLatitude());    // 创建点坐标(经度,纬度)
-    map.centerAndZoom(point, 8);                   // 初始化地图,设置中心点坐标和地图大小级别
+    //var point = new BMap.Point(114.381692, 30.573998);    // 创建点坐标(经度,纬度)
+    var point = new BMap.Point(window.external.GetLongitude(), window.external.GetLatitude());    // 创建点坐标(经度,纬度)
+    map.centerAndZoom(point, 13);                   // 初始化地图,设置中心点坐标和地图大小级别
     //map.addOverlay(new BMap.Marker(point));         // 给该坐标加一个红点标记
     map.addControl(new BMap.NavigationControl());   // 添加平移缩放控件
     map.addControl(new BMap.ScaleControl());        // 添加比例尺控件
@@ -303,12 +302,24 @@ namespace LocationCleaned
         }
         public string GetLatitude()
         {
-            return Location.Latitude.ToString();
+            Console.WriteLine(Location.Latitude.ToString());
+            Console.WriteLine(txtLocation.Latitude.ToString());
+            if (Location.Latitude.ToString() == "0" && txtLocation.Latitude.ToString() == "0")
+            {
+                return "30.573998";
+            }
+            return Location.Latitude.ToString()=="0"?txtLocation.Latitude.ToString(): Location.Latitude.ToString();
         }
 
         public string GetLongitude()
         {
-            return Location.Longitude.ToString();
+            Console.WriteLine(Location.Longitude.ToString());
+            Console.WriteLine(txtLocation.Longitude.ToString());
+            if (Location.Longitude.ToString() == "0" && txtLocation.Longitude.ToString() == "0")
+            {
+                return "114.381692";
+            }
+            return Location.Longitude.ToString() == "0" ? txtLocation.Longitude.ToString() : Location.Longitude.ToString();
         }
 
         public void ReadNameFromDB()

@@ -319,7 +319,23 @@ namespace LocationCleaned
 
         private void txtLocation_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string locStr = txtLocation.Text;
+            if (locStr.Contains("[") & locStr.Contains("]"))
+            {
+                int start = locStr.LastIndexOf("[");
+                int end = locStr.LastIndexOf("]");
+                locStr = locStr.Substring(start + 1, end - start - 1);
+            }
+            else if (locStr.Contains(","))
+            {
+                locStr = locStr.Replace(",", ":");
+            }
+            string[] loc = locStr.Split(new char[] { ':' });
+            if (loc.Length == 2)
+            {
+                map.txtLocation.Longitude = System.Convert.ToDouble(loc[0].Trim());
+                map.txtLocation.Latitude = System.Convert.ToDouble(loc[1].Trim());
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
