@@ -285,7 +285,7 @@ namespace LocationCleaned
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             speed = System.Convert.ToDouble(textBox1.Text);
-            PrintMessage($"速度修改为：{speed}");
+            PrintMessage($"速度修改为：{speed.ToString("0." + new string('#', 339))}");
         }
 
         private void label1_Click(object sender, EventArgs e)
