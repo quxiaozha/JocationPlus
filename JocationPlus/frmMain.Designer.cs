@@ -373,7 +373,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "JocationPlus v1.7  虚拟定位修改器 By qxz";
+            this.Text = "JocationPlus v1.7.1  虚拟定位修改器 By qxz";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.groupBox1.ResumeLayout(false);
