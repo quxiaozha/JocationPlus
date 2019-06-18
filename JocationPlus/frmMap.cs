@@ -82,14 +82,13 @@ namespace LocationCleaned
     map.centerAndZoom(point, 13);                   // 初始化地图,设置中心点坐标和地图大小级别
     var lng = window.external.GetLongitude();
     var lat = window.external.GetLatitude();
-    if(lng =! '0' && lat != '0'){
+    if(lng != '0' && lat != '0'){
         point = new BMap.Point(window.external.GetLongitude(), window.external.GetLatitude());    // 创建点坐标(经度,纬度)
         map.centerAndZoom(point, 13);                   // 初始化地图,设置中心点坐标和地图大小级别
     }else{
         var myCity = new BMap.LocalCity();
         myCity.get(myFun); 
     }
-
     //map.addOverlay(new BMap.Marker(point));         // 给该坐标加一个红点标记
     map.addControl(new BMap.NavigationControl());   // 添加平移缩放控件
     map.addControl(new BMap.ScaleControl());        // 添加比例尺控件
