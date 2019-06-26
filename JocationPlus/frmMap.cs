@@ -87,7 +87,7 @@ namespace LocationCleaned
         map.centerAndZoom(point, 13);                   // 初始化地图,设置中心点坐标和地图大小级别
     }else{
         var myCity = new BMap.LocalCity();
-        myCity.get(myFun); 
+        myCity.get(setCity); 
     }
     //map.addOverlay(new BMap.Marker(point));         // 给该坐标加一个红点标记
     map.addControl(new BMap.NavigationControl());   // 添加平移缩放控件
@@ -124,7 +124,7 @@ namespace LocationCleaned
         });
     });
 
-    function myFun(result){
+    function setCity(result){
 	    var cityName = result.name;
 	    map.setCenter(cityName);
         //map.centerAndZoom(cityName, 13);
