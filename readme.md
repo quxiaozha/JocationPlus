@@ -2,6 +2,8 @@
 
 #### 修改自[JonneyDong的Jocation](https://github.com/JonneyDong/JocationRelease)，感谢原作者的开源~
 
+#### 使用方法：下载源码，使用vs编译后生成exe，即可使用
+
 ### 欢迎PR~
 
 ### JocationPlus ~~QQ交流群: 760883874人太多，关闭免费加入了~~
