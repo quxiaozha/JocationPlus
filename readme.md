@@ -6,7 +6,7 @@
 
 ### 欢迎STAR、PR~
 
-### JocationPlus ~~QQ交流群: 760883874人太多，关闭免费加入了~~
+### JocationPlus 
 
 #### 版本记录
 
